@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestyle.css">
+    <title>Student Home Page</title>
+</head>
+<body>
+    <header>
+        <button id="profile-btn">Profile</button>
+    </header>
+    <h1>Application Timeline</h1>
+    <main>
+        <!-- Add this inside the tracking-line-container section -->
+<section id="tracking-line-container">
+    <div class="tracking-step completed">
+        <div class="step-circle">1</div>
+        <span>Step 1</span>
+    </div>
+    <div class="step-arrow"></div>
+    <div class="tracking-step">
+        <div class="step-circle">2</div>
+        <span>Step 2</span>
+    </div>
+    <div class="step-arrow"></div>
+    <div class="tracking-step">
+        <div class="step-circle">3</div>
+        <span>Step 3</span>
+    </div>
+</section>
+
+        <section id="actions-key-dates">
+            <div class="actions-container">
+                <h2>Actions to Complete</h2>
+                    <div class="action-item">
+                        <span>Passport Copy</span>
+                        <select>
+                            <option value="pending">Pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="refused">Refused</option>
+                        </select>
+                    </div>
+                    <div class="action-item">
+                        <span>Birth Certificate</span>
+                        <select>
+                            <option value="pending">Pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="refused">Refused</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Add your actions list here -->
+            </div>
+            <div class="key-dates-container">
+                <h2>Key Dates</h2>
+                <!-- Add your key dates list here -->
+            </div>
+        </section>
+    </main>
+    <button id="live-chat-btn">Live Chat</button>
+    <script src="scripts.js"></script>
+</body>
+</html>

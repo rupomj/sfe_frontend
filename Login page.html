@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #4B0082, #9400D3);
+        }
+        #login-options {
+            background-color: #fff;
+            border-radius: 10px;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #fff;
+        }
+        .option {
+            display: block;
+            margin-top: 20px;
+        }
+        .option a {
+            display: inline-block;
+            width: 100%;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .student {
+            background-color: #4B0082;
+        }
+        .admin {
+            background-color: #9400D3;
+        }
+        .option a:hover {
+            background-color: #fff;
+            color: #ae4ef2;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-options">
+        <h1>Login</h1>
+        <div class="options">
+            <div class="option student">
+                <a href="portal_frontend.html">Login as Student</a>
+            </div>
+            <div class="option admin">
+                <a href="portal_frontend.html">Login as Admin</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

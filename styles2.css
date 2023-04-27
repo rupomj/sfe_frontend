@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a82fb, #f683e1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom:2px;
+}
+input[type="text"],
+input[type="text"],
+input[type="text"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    border: 1px solid #88b4db;
+    width: 100%;
+}
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; 
+    height: auto;
+    z-index: 30;
+}

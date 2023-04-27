@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to LSBU Student Portal</title>
+</head>
+<body>
+    <img src="Lsbu_logo.jpg" alt="Your Logo" id="logo">
+    <main>
+        <div class="container">
+            <h1>Welcome To LSBU Student Portal</h1>
+            <div class="login-container">
+                <button class="btn" onclick="showLoginForm('student')">Student Login</button>
+                <button class="btn" onclick="showLoginForm('admin')">Admin Login</button>
+            </div>
+            <p class="signup-text">Don't have an account? <a href="sign_up.html">Sign up</a></p>
+        </div>
+    </main>
+    <div class="overlay" id="overlay" style="display:none;"></div>
+    <div class="login-form popup" id="student-login" style="display:none;">
+        <form>
+            <label for="student-username">Username:</label>
+            <input type="text" id="student-username" name="student-username" required>
+            <label for="student-password">Password:</label>
+            <input type="password" id="student-password" name="student-password" required>
+            <label for="student-remember">
+                <input type="checkbox" id="student-remember" name="student-remember">
+                Remember me
+            </label>
+            <button class="btn" type="submit">Login</button>
+        </form>
+    </div>
+    <div class="login-form popup" id="admin-login" style="display:none;">
+        <form>
+            <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="admin-username" required>
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="admin-password" required>
+            <label for="admin-remember">
+                <input type="checkbox" id="admin-remember" name="admin-remember">
+                Remember me
+            </label>
+            <button class="btn" type="submit">Login</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
